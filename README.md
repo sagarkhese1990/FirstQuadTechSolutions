@@ -1,9 +1,12 @@
-# TraningInstitute
+# FirstQuadTechSolutions
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
-
+1. git clone https://github.com/sagarkhese1990/FirstQuadTechSolutions.git
+2. cd FirstQuadTechSolutions
+3. npm install
+4. ng serve
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
