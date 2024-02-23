@@ -1,0 +1,23 @@
+@import  '../../../assets/bootstrap//boostrap-variables';
+h2 {
+    &::after {
+        content: '';
+        height: 2px;
+        width: 50%;
+        position: absolute;
+        background-color: $primary;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+    }
+    &::before {
+        content: '';
+        height: 2px;
+        width: 25%;
+        position: absolute;
+        background-color: $primary;
+        bottom: -15px;
+        left: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,34 @@
+<nav  class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand text-white" >
+            <span class="text-primary">First</span> Quad <span>Solutions</span>
+        </a>
+        <button  type="button" class="navbar-toggler text-white border-0" (click)="toggleMenu()">
+            <span  class="burger-menu">
+                <i class="bi bi-list"></i>
+            </span>
+        </button>
+        <div  id="navbarSupportedContent" class="collapse navbar-collapse" [class.d-block]="showMenu">
+            <ul  class="navbar-nav ms-auto">
+                <li  class="nav-item" (click)="toggleMenu()">
+                    <span  class="nav-link">Home</span>
+                </li>
+                <li  class="nav-item" (click)="toggleMenu()">
+                    <span  class="nav-link" >About</span>
+                </li>
+                <li  class="nav-item">
+                    <span  class="nav-link" (click)="toggleMenu()">Team</span>
+                </li>
+                <li  class="nav-item">
+                    <span  class="nav-link" (click)="toggleMenu()">Services</span>
+                </li>
+                <li  class="nav-item" (click)="toggleMenu()">
+                    <span  class="nav-link">Work</span>
+                </li>
+                <li  class="nav-item">
+                    <span  class="nav-link" (click)="toggleMenu()">Contact</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

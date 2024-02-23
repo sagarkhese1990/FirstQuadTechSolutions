@@ -1,0 +1,97 @@
+/*!
+ * Data Protection Manager (DPM) - GDPR Compliance
+ * Copyright (C) 2022 - All rights reserved - Studio Storti Srl
+ */
+
+@import "boostrap-variables";
+// 4. Include any default map overrides here
+$custom-colors: (
+    "aqua":$aqua,
+    "oil":$oil,
+);
+$colors: map-merge($colors, $custom-colors);
+
+$custom-theme-colors: (
+    "accent": $accent,
+    "high-risk": $high-risk,
+    "purple": $purple,
+    "teal": $teal,
+    "blue": $blue,
+    "indigo": $indigo,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "cyan": $cyan,
+    "aqua": $aqua,
+    "oil": $oil,
+    "gray-6": $gray-600,
+    "gray-8": $gray-800,
+);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+$custom-spacers: (
+    "25": ($spacer * 0.25),
+    "50": ($spacer * 0.5),
+    "75": ($spacer * 0.75),
+    "100": ($spacer),
+    "125": ($spacer * 1.25),
+    "150": ($spacer * 1.5),
+    "175": ($spacer * 1.75),
+    "200": ($spacer * 2),
+    "225": ($spacer * 2.25),
+    "250": ($spacer * 2.5),
+    "275": ($spacer * 2.75),
+    "300": ($spacer * 3),
+    "325": ($spacer * 3.25),
+    "350": ($spacer * 3.5),
+    "375": ($spacer * 3.75),
+    "400": ($spacer * 4),
+);
+$spacers: map-merge($spacers, $custom-spacers);
+
+// 5. Include remainder of required parts
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/alert';
+@import 'bootstrap/scss/badge';
+//@import "bootstrap/scss/breadcrumb";
+@import 'bootstrap/scss/button-group';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/card';
+//@import "bootstrap/scss/carousel";
+@import 'bootstrap/scss/close';
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/dropdown';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/helpers';
+//@import "bootstrap/scss/images";
+@import 'bootstrap/scss/list-group';
+@import 'bootstrap/scss/modal';
+@import 'bootstrap/scss/nav';
+@import 'bootstrap/scss/navbar';
+//@import 'bootstrap/scss/offcanvas';
+@import 'bootstrap/scss/pagination';
+//@import 'bootstrap/scss/placeholders';
+@import "bootstrap/scss/popover";
+@import 'bootstrap/scss/progress';
+@import 'bootstrap/scss/reboot';
+//@import "bootstrap/scss/spinners";
+@import 'bootstrap/scss/tables';
+//@import 'bootstrap/scss/toasts';
+@import 'bootstrap/scss/tooltip';
+@import "bootstrap/scss/transitions";
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/spinners';
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import 'bootstrap/scss/utilities/api';
+
+

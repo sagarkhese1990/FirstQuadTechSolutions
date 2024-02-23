@@ -1,0 +1,87 @@
+/*!
+ * Data Protection Manager (DPM) - GDPR Compliance
+ * Copyright (C) 2023 - All rights reserved - Studio Storti Srl
+ */
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+// 2. Include any default variable overrides here
+$gray-200: #e9ecef;
+$gray-600: #bebebe;
+
+// DPM Palette overrides
+$blue: #84baf3; //($info)
+$indigo: #924af7;
+$purple: #c4adf3;
+$pink: #f3a5c9;
+$red: #f47e80; //($danger)
+$orange: #ffb669; //($high-risk)
+$yellow: #ffde7e; //($warning)
+$green: #bfe58d; //($success)
+$teal: #73e2bb;
+$cyan: #49ccd4;
+$aqua: #49ccd4;
+$success: #0c8b51;
+ //($primary)
+$oil: #429bb3; //($sidebar)
+
+
+// Main colors
+$primary: $aqua;
+$secondary: $gray-200;
+$accent: $gray-600;
+$sidebar: $oil;
+$info: $blue;
+$high-risk: $orange;
+$gray: #ccc;
+
+// Fonts
+$font-size-root:14px;
+$font-family-sans-serif: 'Exo', sans-serif;
+$enable-gradients: true;
+
+// Grid
+$grid-gutter-width: 1rem;
+
+// Form check override
+$form-check-input-width: 1.5em;
+// Form switch override
+$form-switch-width: 2.5em;
+
+// Badge
+$badge-font-size: 85%;
+
+// Dropdowns
+$dropdown-padding-x: 1.25rem;
+$dropdown-padding-y: 1.25rem;
+
+// Enable negative margins for backwards compatibility
+$enable-negative-margins: true;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+// border width
+$border-width-custom-1: 1px !default;
+$border-width-custom-2: 2px !default;
+$border-width-custom-3: 3px !default;
+$border-width-custom-4: 4px !default;
+$border-width-custom-5: 5px !default;
+$border-width-custom-6: 6px !default;
+
+$border-width-customs: ("1": $border-width-custom-1, "2": $border-width-custom-2, "3": $border-width-custom-3, "4": $border-width-custom-4, "5": $border-width-custom-5);
+
+@each $name, $size in $border-width-customs {
+    @each $var in '', 'top-', 'right-', 'bottom-', 'left-' {
+        .border-#{$var}#{$name} { border-#{$var}width: $size !important; border-#{$var}style: solid; border-#{$var}color: $border-color;}
+    }
+}
+@mixin fill-colors {
+    @each $name, $color in $theme-colors {
+        .fill-#{$name}{
+            fill: $color;
+        }
+    }
+}
+@include fill-colors;

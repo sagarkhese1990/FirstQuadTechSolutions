@@ -1,0 +1,83 @@
+<app-banner></app-banner>
+<div class="container">
+    <section class="section-wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <app-section-title
+                titlePreffix="Working Everytime"
+                titleSuffix="For Your Needs"
+                titleAlign="center"
+                ></app-section-title>
+            </div>
+            <div class="col-md-4 my-3" *ngFor="let need of yourNeeds; let i = index">
+                <app-card-component
+                  [icon]="need.icon"
+                  [cardTitle]="need.cardTitle"
+                  [cardDescription]="need.cardDescription"
+                  [index]="i"
+                ></app-card-component>
+            </div>
+        </div>
+    </section>
+   
+</div>
+<section class="section-wrapper our-services">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <app-section-title
+                titlePreffix="Our"
+                titleSuffix="Services"
+                titleAlign="center"
+                prefixColor="white"
+                ></app-section-title>
+            </div>
+            <div class="col-md-3" *ngFor="let service of ourServices">
+                <div class="service-box text-center">
+                    <div class="icon text-primary fs-1">
+                        <i class="bi bi-{{service.icon}}"></i>
+                    </div>
+                    <h3 class="card-title text-white fs-3 my-3">
+                        {{service.name}}
+                    </h3>
+                    <p class="text-accent">{{service.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-wrapper our-approach">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <app-section-title
+                titlePreffix="Our"
+                titleSuffix="Approach"
+                titleAlign="center"
+                ></app-section-title>
+            </div>
+            <div class="col-md-4">
+                <div class="approach-box">
+                    <div class="circle-icon">1</div>
+                    <h3>Skills Training</h3>
+                    <p>Provide best training by industry experts which includes complementary services like online coding test preparation.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="approach-box">
+                    <div class="circle-icon">2</div>
+                    <h3>Hands on experience 
+                        on live projects </h3>
+                    <p>Provide exposure to work on live projects and gain experience of end to end project development lifecycle including agile development methodology.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="approach-box">
+                    <div class="circle-icon">3</div>
+                    <h3>Placement assistance</h3>
+                    <p>Provide assistance to prepare resume and also take mock interviews to prepare for the interviews.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

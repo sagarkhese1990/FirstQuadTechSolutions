@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@use './assets/fonts/index';
+@use './assets/bootstrap';  
+@import url('./assets/scss/_custom.scss');
+
+
+
+html, body {
+    height: 100%;
+    @media screen and (max-width: 991px) {
+        font-size: 62% !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .w-sm-100 {
+        width: 100% !important;
+    }
+}

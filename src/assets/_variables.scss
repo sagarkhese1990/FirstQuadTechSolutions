@@ -1,0 +1,43 @@
+/*!
+ * Data Protection Manager (DPM) - GDPR Compliance
+ *      Copyright (C)  2018 - All rights reserved - Studio Storti Srl
+ */
+
+@use "./bootstrap/boostrap-variables" as *;
+@forward "./bootstrap/boostrap-variables";
+
+// Add additional custom variables here
+
+$card-shadow: 0 1px 4px 0 rgba(204, 204, 204, 1);
+$content-background-color: #f6f6f6;
+$side-nav-background-color: #156381;
+$selected-menu-background-color: shade-color($side-nav-background-color, 6);
+$sub-menu-background-color: $selected-menu-background-color;
+$bg-faded: shade-color($body-bg, 3%);
+$checkbox-border: 1px solid $gray-300;
+
+$card-border: $card-border-width $card-border-color;
+$card-inactive-border: $card-border-width solid rgba($gray-500, 0.4);
+$card-active-border: $card-border-width solid $primary;
+$card-separator-border: 1px solid $gray-200;
+
+$side-nav-width: 200px;
+$side-nav-collapsed-width: 70px;
+$side-nav-heading-height: 16rem;
+$side-nav-heading-height-collapsed: 4rem;
+
+$nav-link-border: 0.4rem solid $primary;
+$current-link-border: 1px solid $primary;
+$box-shadow: 0 1px 2px 0 rgba(9, 30, 66, 0.25);
+
+$default-transition: 0.2s all ease-in-out;
+$wizard-steps-max-width: 40vw;
+
+$alert-danger-text: shade-color($warning, 20%);
+
+
+//Tags
+$tag-out-border: transparentize(#5D9CEC, 0.5) !default;
+$white-50: transparentize(#FFFFFF, 0.5) !default;
+$blue-dark-50: #598DD0 !default;
+$blue-dark-100: #4777B4 !default;

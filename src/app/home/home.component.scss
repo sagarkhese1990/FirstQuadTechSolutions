@@ -1,0 +1,40 @@
+@import  '../../assets/bootstrap//boostrap-variables';
+.our-services{
+    background-image: url("../../assets/images/main-bg-1.jpg");
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.7;
+    }
+}
+.our-approach{ 
+    background-image: url("../../assets/images/dott.jpg");
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .circle-icon {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        color: $primary;
+        transition: all .5s;
+        margin-bottom: 20px;
+        border: 2px dashed $primary;
+        border-radius: 50%;
+    }
+}
