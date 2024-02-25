@@ -10,10 +10,10 @@
         </button>
         <div  id="navbarSupportedContent" class="collapse navbar-collapse" [class.d-block]="showMenu">
             <ul  class="navbar-nav ms-auto">
-                <li  class="nav-item" (click)="toggleMenu()">
+                <li  routerLink="/" class="nav-item" (click)="toggleMenu()">
                     <span  class="nav-link">Home</span>
                 </li>
-                <li  class="nav-item" (click)="toggleMenu()">
+                <li routerLink="/about" class="nav-item" (click)="toggleMenu()">
                     <span  class="nav-link" >About</span>
                 </li>
                 <li  class="nav-item">

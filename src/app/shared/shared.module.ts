@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -13,7 +12,6 @@ import { CardComponentComponent } from './card-component/card-component.componen
 @NgModule({
   declarations: [
     FooterComponent,
-    HeaderComponent,
     BannerComponent,
     CoursesComponent,
     SectionTitleComponent,
@@ -21,7 +19,6 @@ import { CardComponentComponent } from './card-component/card-component.componen
   ],
   exports: [
     FooterComponent,
-    HeaderComponent,
     BannerComponent,
     CoursesComponent,
     SectionTitleComponent,
