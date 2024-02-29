@@ -6,6 +6,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { CardComponentComponent } from './card-component/card-component.component';
+import { PageTitleComponent } from './page-title/page-title.component';
 
 
 
@@ -15,14 +16,16 @@ import { CardComponentComponent } from './card-component/card-component.componen
     BannerComponent,
     CoursesComponent,
     SectionTitleComponent,
-    CardComponentComponent
+    CardComponentComponent,
+    PageTitleComponent
   ],
   exports: [
     FooterComponent,
     BannerComponent,
     CoursesComponent,
     SectionTitleComponent,
-    CardComponentComponent
+    CardComponentComponent,
+    PageTitleComponent
   ],
   imports: [
     CommonModule,

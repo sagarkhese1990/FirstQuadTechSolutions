@@ -1,5 +1,48 @@
-<div class="pages about">
-    <div class="container position-relative text-center">
-        <h1 class="text-white fw-bold">About Us</h1>
+<app-page-title [title]="title"></app-page-title>
+<!-- <app-page-title [title]="title" (newTitle)="changeTitle($event)"></app-page-title> -->
+    <div class="container my-5">
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                    <app-section-title 
+                    titlePreffix="Our"
+                    titleSuffix="Company"
+                    titleAlign="left"></app-section-title>
+                    <p>The industry veterans have joined hands to start a software development company with an intent to serve the IT industry in various ways.</p>
+                    <p>We would like to utilize our experience and expertise to develop smart solutions, upgrade professional skills of young talent and make the best talent available for the IT industry.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-wrapper">
+                        <img src="../../assets/images/banner.jpeg">
+                    </div>
+                       
+                </div>
+            </div>
+        </section>
+        <section class="my-3">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="box p-3">
+                        <i class="bi bi-hand-thumbs-up icon-size text-primary"></i>
+                        <h5 class="text-center">Trusted company </h5>
+                        <p class="icon-p">We deliver email marketing campaigns to audience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="box p-3">
+                    <i class="bi bi-arrow-up-left-circle icon-size text-primary"></i><h5 class="text-center">Professional work</h5><p class="icon-p">We also help our clients with social media strategy.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="box p-3">
+                    <i class="bi bi-info-circle icon-size text-primary"></i><h5 class="text-center">Help any time</h5><p class="icon-p">We never fail for support for your business anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section>
+        <div class="feature">
+            
+        </div>
+       </section> 
     </div>
-</div>

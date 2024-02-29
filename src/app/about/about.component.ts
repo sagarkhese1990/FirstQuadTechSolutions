@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  
+  title = 'About Us';
+  // For Output decorator
+  // changeTitle(title: string) {
+  //   this.title = title;
+  // }
 }

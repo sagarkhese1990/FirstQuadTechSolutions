@@ -1,1 +1,1 @@
-<h2 class="d-inline-block position-relative text-{{prefixColor}}">{{titlePreffix}} <span class="text-primary"> {{titleSuffix}} </span></h2>
+<h2 class="d-inline-block position-relative" [ngClass]="prefixColor ? 'text-' + prefixColor : ''">{{titlePreffix}} <span class="text-primary"> {{titleSuffix}} </span></h2>

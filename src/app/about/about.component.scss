@@ -1,3 +1,23 @@
-.about {
-    background-image: url('../../assets/images/about-back1.jpg');
+.icon-size{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.icon{
+    text-align: center;
+    padding: 20px;      
+}
+.icon-p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: bold;
+    font-size:17px;
+    
+}
+.box {
+    border: 1px dashed #e5e5e5;
+    border-radius: 8px;
+}
+.image-wrapper img{
+    height: 300px;
+    width: 100%;
+
 }
