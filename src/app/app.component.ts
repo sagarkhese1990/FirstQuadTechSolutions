@@ -13,7 +13,7 @@ export class AppComponent {
   isScrollReachedPosition = false;
   constructor(private el: ElementRef) {}
   @HostListener('window:scroll', ['$event']) scrolling(){
-    if(document.documentElement.scrollTop >= 200) this.isScrolling$.next(true)
+    if(document.documentElement.scrollTop >= 100) this.isScrolling$.next(true)
     else this.isScrolling$.next(false);
   }
 }
