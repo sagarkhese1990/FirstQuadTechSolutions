@@ -1,1 +1,17 @@
 <app-page-title [title]="'Our Services'" [backgroundImage]="backgroundImage"></app-page-title>
+<section class="section-wrapper our-services">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-3 mb-5" *ngFor="let service of ourServices">
+                    <app-card-component
+                      [icon]="service.icon"
+                      [cardTitle]="service.name"
+                      [cardDescription]="service.description"
+                      [showReadMore]="true"
+                      [routePath]="service.routePath"
+                      (redirectToRoute)="redirectToRoute($event)"
+                    ></app-card-component>
+            </div>
+        </div>
+    </div>
+</section>

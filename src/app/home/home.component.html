@@ -14,7 +14,7 @@
                   [icon]="need.icon"
                   [cardTitle]="need.cardTitle"
                   [cardDescription]="need.cardDescription"
-                  [index]="i"
+                  [index]="(i + 1)"
                 ></app-card-component>
             </div>
         </div>
@@ -41,6 +41,7 @@
                         {{service.name}}
                     </h3>
                     <p class="text-accent">{{service.description}}</p>
+                    <a href="javascript:void(0)" [routerLink]="service.routePath">Read More</a>
                 </div>
             </div>
         </div>

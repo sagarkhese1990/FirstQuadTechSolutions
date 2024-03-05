@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-component',
@@ -10,4 +10,7 @@ export class CardComponentComponent {
   @Input() cardTitle = '';
   @Input() cardDescription = '';
   @Input() index: number = 0;
+  @Input() showReadMore = false;
+  @Input() routePath: string = '';
+  @Output() redirectToRoute = new EventEmitter<string>();
 }

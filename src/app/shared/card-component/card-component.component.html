@@ -4,5 +4,9 @@
     </div>
     <h3 class="card-title">{{cardTitle}}</h3>
     <p>{{cardDescription}}</p>
-    <span *ngIf="index + 1">{{index + 1}}</span>
+    <span *ngIf="index">{{index}}</span>
+   
+</div>
+<div class="d-grid btn-wrapper" *ngIf="showReadMore">
+    <button (click)="redirectToRoute.emit(routePath)" class="btn btn-primary rounded-0">Read More</button>
 </div>

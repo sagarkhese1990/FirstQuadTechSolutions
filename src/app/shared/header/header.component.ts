@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
  showMenu = false;
+ @Input() brandLogo: string = 'assets/images/logo.svg';
  toggleMenu():void {
   this.showMenu = !this.showMenu;
  }
