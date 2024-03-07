@@ -1,0 +1,28 @@
+.training-patch {
+    position: relative;
+    overflow: hidden;
+    background-color: #072e33;
+    color: #fff;
+    // &::after {
+    //     content: "";
+    //     height: 300px;
+    //     width: 300px;
+    //     background-color: orange;
+    //     position: absolute;
+    //     z-index: 1;
+    //     top: 60px;
+    //     left: -151px;
+    //     transform: rotate(45deg);
+    // }
+    // &::before {
+    //     content: "";
+    //     height: 300px;
+    //     width: 300px;
+    //     background-color: orange;
+    //     position: absolute;
+    //     z-index: 1;
+    //     top: 60px;
+    //     right: -151px;
+    //     transform: rotate(-45deg);
+    // }
+}
