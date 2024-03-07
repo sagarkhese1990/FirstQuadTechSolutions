@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   title ="Contact Us"
-  xyz=10
-
 }
