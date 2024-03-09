@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { WorkRoutingModule } from './work-routing.module';
 import { WorkComponent } from './work.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { WorkComponent } from './work.component';
   ],
   imports: [
     CommonModule,
-    WorkRoutingModule
+    WorkRoutingModule,
+    SharedModule,
   ]
 })
 export class WorkModule { }
