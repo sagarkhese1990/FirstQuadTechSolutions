@@ -1,6 +1,6 @@
 <nav  class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand text-white" > 
+        <a class="navbar-brand text-white" routerLink="/"> 
 			<img src="assets/images/logo.svg" [src]="brandLogo" alt="First Quad Tech Solutions"/>
         </a>
         <button  type="button" class="navbar-toggler text-white border-0" (click)="toggleMenu()">
@@ -36,9 +36,9 @@
                         </li>
                     </ul>
                 </li>
-                <li  class="nav-item" routerLink="/work" (click)="toggleMenu()">
+                <!-- <li  class="nav-item" routerLink="/work" (click)="toggleMenu()">
                     <span  class="nav-link">Work</span>
-                </li>
+                </li> -->
                 <li  class="nav-item" routerLink="/contact" >
                     <span  class="nav-link" (click)="toggleMenu()">Contact</span>
 

@@ -8,9 +8,9 @@
 html, body {
     height: 100%;
     font-size: 1.25rem;
-    @media screen and (max-width: 991px) {
-        font-size: 62% !important;
-    }
+    // @media screen and (max-width: 991px) {
+    //     font-size: 80% !important;
+    // }
 }
 @media screen and (max-width: 991px) {
     .w-sm-100 {
