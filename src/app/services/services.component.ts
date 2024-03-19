@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent {
-  backgroundImage = '../../assets/images/main-bg-1.jpg';
   ourServices: Service[] = [
     {
       name: 'IT Solutions',
