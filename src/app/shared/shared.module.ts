@@ -26,7 +26,7 @@ import { PageTitleComponent } from './page-title/page-title.component';
   ],
   imports: [
     CommonModule,
-    NgbCarouselModule
+    NgbCarouselModule,
   ]
 })
 export class SharedModule { }
