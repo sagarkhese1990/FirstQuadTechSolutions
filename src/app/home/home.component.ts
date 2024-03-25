@@ -16,7 +16,7 @@ export class HomeComponent {
     {
       icon: 'shield-check',
       cardTitle: 'Reliable Software Solution',
-      cardDescription: 'We are consistently providing good quality of Softwares, which is high in performance and we are trustworthy, honest and responsible'
+      cardDescription: 'Our endeavor is to poride industry standone software, we benchmark our solutions with respect to cost, Quality & speed aligned with client expectations.'
     },
     {
       icon: 'graph-up-arrow',
@@ -31,17 +31,17 @@ export class HomeComponent {
     {
       icon: 'gear',
       cardTitle: 'Integrity',
-      cardDescription: 'We are consistent, honest and fair and always do what is right'
+      cardDescription: 'Our businees operations priciples are based on consistency, corporate, governance & client first approach, ethical practises.'
     },
     {
       icon: 'pie-chart-fill',
       cardTitle: 'Evolution',
-      cardDescription: 'Continue to evolve with modern change. Don’t be satisfied with the current status'
+      cardDescription: 'Continue to evolve with industry trends, questioning status, improvise and adaptability.'
     },
     {
       icon: 'card-checklist',
       cardTitle: 'Accountability',
-      cardDescription: 'We are personally accountable for delivering on our commitments'
+      cardDescription: 'Beyond technology solution, we emphasise on bringing Value add for our clients mith determinatian & passion to perform.'
     }
   ]; 
   ourServices: Service[] = [
@@ -53,19 +53,19 @@ export class HomeComponent {
     },
     {
       name: 'Professional Training',
-      description : 'We provide professional training to working professionals as well as students to gain expertise in specific area and enable them to switch/join more demanding job.',
+      description : 'We provide professional training to working professionals as well as students to gain expertise in specific area and enable them to grab opportunities aligned to their career aspiration.',
       icon: 'person-bounding-box',
       routePath: 'services/professional-training'
     },
     {
       name: 'Employment Solutions',
-      description : 'We provide professional training to graduates and provide them legal employment and exposure to real world software projects. We help them to foster their skills and experience to enter into challenging IT world.',
+      description : 'We provide professional training to graduates and provide them legal employment and exposure to real world industry. We help them to foster their skills and experience to match industry demand.',
       icon: 'person-raised-hand',
       routePath: 'services/employment-solutions'
     },
     {
       name: 'Contract Staffing',
-      description : 'The industry veterans have joined hands to start a software development company with an intent to serve the IT industry in various ways.',
+      description : 'The industry veterans have joined hands to start IT solution company to help clients in staff accomadation while they focus on core business.',
       icon: 'people-fill',
       routePath: 'services/contract-staffing'
     }
