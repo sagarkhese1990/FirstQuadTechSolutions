@@ -28,11 +28,7 @@ npm-debug.log
 /src/environments/environment.prod.ts
 /dist/
 
-/src/generated/
-
 /../.DS_Store
 /src/app/.DS_Store
 /src/app/ui-kit/.DS_Store
-
-/storybook-static
-.storybook/documentation.json
+/src/assets/images/.DS_Store
