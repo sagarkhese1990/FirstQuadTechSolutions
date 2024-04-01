@@ -11,25 +11,25 @@ export class ServicesComponent {
   ourServices: Service[] = [
     {
       name: 'IT Solutions',
-      description : 'While correct use of technology has long been an important factor in business success, the need for IT solutions is seeing unprecedented growth in today’s market.',
+      description : 'While the correct use of technology has long been an important factor in business success, the need for IT solutions in today\'s marketplace is growing at an unprecedented rate.',
       icon: 'lightbulb-fill',
       routePath: 'services/it-solutions'
     },
     {
       name: 'Professional Training',
-      description : 'We provide professional training to working professionals as well as students to gain expertise in specific area and enable them to switch/join more demanding job.',
+      description : 'We offer professional training to both working professionals and students, enabling them to gain expertise in specific areas and to take advantage of opportunities that match their career aspirations.',
       icon: 'person-bounding-box',
       routePath: 'services/professional-training'
     },
     {
       name: 'Employment Solutions',
-      description : 'We provide professional training to graduates and provide them legal employment and exposure to real world software projects. We help them to foster their skills and experience to enter into challenging IT world.',
+      description : 'We provide graduates with professional training, legal employment and exposure to the real world of industry. We help them to develop their skills and experience in line with industry demand.',
       icon: 'person-raised-hand',
       routePath: 'services/employment-solutions'
     },
     {
       name: 'Contract Staffing',
-      description : 'The industry veterans have joined hands to start a software development company with an intent to serve the IT industry in various ways.',
+      description : 'The industry veterans have joined forces to create an IT solutions company to help clients with staff accommodation while they focus on their core business.',
       icon: 'people-fill',
       routePath: 'services/contract-staffing'
     }
