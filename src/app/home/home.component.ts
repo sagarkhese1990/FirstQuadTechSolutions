@@ -15,28 +15,28 @@ export class HomeComponent {
   yourNeeds: YourNeed[] = [
     {
       icon: 'shield-check',
-      cardTitle: 'Reliable Software Solution',
-      cardDescription: 'We strive to provide industry standard software, benchmarking our solutions against cost, quality & speed in line with customer expectations.'
+      cardTitle: 'Reliable Software Solutions',
+      cardDescription: 'We strive to provide the industry standard software solutions, our solutions can be benchmarked against Cost, Quality & Speed in line with our customer expectations.'
     },
     {
       icon: 'graph-up-arrow',
       cardTitle: 'Web Analysis',
-      cardDescription: 'We analyse all related web platforms before building any website or web application.'
+      cardDescription: 'We analyse and research related web platforms before proposing any website or web application solutions'
     },
     {
       icon: 'person',
-      cardTitle: 'First Support',
-      cardDescription: 'Our team provides better customer support by coordinating with our clients'
+      cardTitle: 'Priority Support',
+      cardDescription: 'Our team provides prioritised customer support along with the seamless coordination as per client needs.'
     },
     {
       icon: 'gear',
       cardTitle: 'Integrity',
-      cardDescription: 'Our business principles are based on consistency, corporate governance, a client-first approach and ethical practices.'
+      cardDescription: 'Our business principles are based on consistency, corporate governance, a client-first approach and ethical business practices.'
     },
     {
       icon: 'pie-chart-fill',
       cardTitle: 'Evolution',
-      cardDescription: 'Evolve with industry trends, challenge the status quo, improvise and adapt.'
+      cardDescription: 'We believe in evolution and  adaptability with industry trends, challenge the status quo with improvisation.'
     },
     {
       icon: 'card-checklist',
@@ -47,59 +47,27 @@ export class HomeComponent {
   ourServices: Service[] = [
     {
       name: 'IT Solutions',
-      description : 'While the correct use of technology has long been an important factor in business success, the need for IT solutions in today\'s marketplace is growing at an unprecedented rate.',
+      description : 'While correct use of technology has long been an important factor in business success, the need for relevant IT solutions is witnessing an unprecedented growth in today’s market.',
       icon: 'lightbulb-fill',
       routePath: 'services/it-solutions'
     },
     {
       name: 'Professional Training',
-      description : 'We offer professional training to both working professionals and students, enabling them to gain expertise in specific areas and to take advantage of opportunities that match their career aspirations.',
+      description : 'We provide professional training to working professionals as well as students to gain expertise in specific areas, and enable them to grab opportunities aligned to their career aspirations.',
       icon: 'person-bounding-box',
       routePath: 'services/professional-training'
     },
     {
       name: 'Employment Solutions',
-      description : 'We provide graduates with professional training, legal employment and exposure to the real world of industry. We help them to develop their skills and experience in line with industry demand.',
+      description : 'We provide professional training to graduates along with legal employment, and exposure to real world industry. We assist them to foster their skills and experience to match the industry demand.',
       icon: 'person-raised-hand',
       routePath: 'services/employment-solutions'
     },
     {
       name: 'Contract Staffing',
-      description : 'The industry veterans have joined forces to create an IT solutions company to help clients with staff accommodation while they focus on their core business.',
+      description : 'The industry veterans have joined hands to provide relevant IT solutions, endeavour is to assist companies in staff augmentation through managed services while companies can focus on their core business.',
       icon: 'people-fill',
       routePath: 'services/contract-staffing'
     }
-  ]
-  courses: Course[] = [ 
-    {
-    image: '../../../assets/images/Asset1.svg',
-    courseTitle: 'Front End Develiopnent',
-    courseDescription: 'Tets Description',
-  },
-  {
-    image: '../../../assets/images/Asset1.svg',
-    courseTitle: 'Front End Develiopnent 1',
-    courseDescription: 'Tets Description',
-  },
-  {
-    image: '../../../assets/images/Asset1.svg',
-    courseTitle: 'Front End Develiopnent 3',
-    courseDescription: 'Tets Description',
-  },
-  {
-    image: '../../../assets/images/Asset1.svg',
-    courseTitle: 'Front End Develiopnent',
-    courseDescription: 'Tets Description',
-  },
-  {
-    image: '../../../assets/images/Asset1.svg',
-    courseTitle: 'Front End Develiopnent 1',
-    courseDescription: 'Tets Description',
-  },
-  {
-    image: '../../../assets/images/Asset1.svg',
-    courseTitle: 'Front End Develiopnent 3',
-    courseDescription: 'Tets Description',
-  }
-];
+  ];
 }
