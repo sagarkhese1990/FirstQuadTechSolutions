@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
  showMenu = false;
- @Input() brandLogo: string = 'assets/images/logo.svg';
+ @Input() brandLogo: string = 'assets/images/logo.png';
  toggleMenu():void {
   this.showMenu = !this.showMenu;
  }

@@ -11,23 +11,23 @@ export class AppComponent {
   title = 'traning-institute';
   isScrolling$ = new BehaviorSubject<boolean>(false);
   isScrollReachedPosition = false;
-  brandLogo= 'assets/images/logo-white.svg'
+  brandLogo= 'assets/images/logo-white.png'
   constructor(private el: ElementRef) {
     if(document.documentElement.clientWidth <= 991) {
-      this.brandLogo = 'assets/images/logo.svg'
+      this.brandLogo = 'assets/images/logo.png'
     }
   }
   @HostListener('window:scroll', ['$event']) scrolling(){
     if(document.documentElement.clientWidth <= 991) {
       this.isScrolling$.next(true)
-      this.brandLogo = 'assets/images/logo.svg'
+      this.brandLogo = 'assets/images/logo.png'
     }else if(document.documentElement.scrollTop >= 100) {
       this.isScrolling$.next(true)
-      this.brandLogo = 'assets/images/logo.svg'
+      this.brandLogo = 'assets/images/logo.png'
     }
     else {
       this.isScrolling$.next(false);
-      this.brandLogo = 'assets/images/logo-white.svg'
+      this.brandLogo = 'assets/images/logo-white.png'
     }
   }
 }
