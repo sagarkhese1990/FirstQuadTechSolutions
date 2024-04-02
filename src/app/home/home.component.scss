@@ -1,9 +1,9 @@
 @import  '../../assets/bootstrap//boostrap-variables';
 .our-services{
-    background-image: url("../../assets/images/main-bg-1.jpg");
+    background-image: url("../../assets/images/service.jpeg");
     position: relative;
     overflow: hidden;
-    background-position: center center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     &::before {

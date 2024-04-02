@@ -52,7 +52,7 @@ export class HomeComponent {
       routePath: 'services/it-solutions'
     },
     {
-      name: 'Professional Training',
+      name: 'Career Mentoring',
       description : 'We provide professional training to working professionals as well as students to gain expertise in specific areas, and enable them to grab opportunities aligned to their career aspirations.',
       icon: 'person-bounding-box',
       routePath: 'services/professional-training'
