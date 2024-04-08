@@ -17,7 +17,7 @@ export class ServicesComponent {
     },
     {
       name: 'Professional Training',
-      description : 'We provide professional training to working professionals as well as students to gain expertise in specific areas, and enable them to grab opportunities aligned to their career aspirations.',
+      description : 'We provide professional training to working professionals as well as graduates to gain expertise in specific areas, and enable them to grab opportunities aligned to their career aspirations.',
       icon: 'person-bounding-box',
       routePath: 'services/professional-training'
     },
@@ -29,7 +29,7 @@ export class ServicesComponent {
     },
     {
       name: 'Staffing Services',
-      description : 'The industry veterans have joined hands to provide relevant IT solutions, endeavour is to assist companies in staff augmentation through managed services while companies can focus on their core business.',
+      description : 'Our talent acquisition team specializes in identifying, sourcing, and recruiting top talent for companies. Our aim is to assist companies in staff augmentation through managed services, allowing them to concentrate on their core business.',
       icon: 'people-fill',
       routePath: 'services/contract-staffing'
     }
