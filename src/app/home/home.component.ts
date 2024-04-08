@@ -46,13 +46,13 @@ export class HomeComponent {
   ]; 
   ourServices: Service[] = [
     {
-      name: 'IT Solutions',
+      name: 'Software Solutions',
       description : 'While correct use of technology has long been an important factor in business success, the need for relevant IT solutions is witnessing an unprecedented growth in today’s market.',
       icon: 'lightbulb-fill',
       routePath: 'services/it-solutions'
     },
     {
-      name: 'Career Mentoring',
+      name: 'Professional Trainings',
       description : 'We provide professional training to working professionals as well as students to gain expertise in specific areas, and enable them to grab opportunities aligned to their career aspirations.',
       icon: 'person-bounding-box',
       routePath: 'services/professional-training'
@@ -64,7 +64,7 @@ export class HomeComponent {
       routePath: 'services/employment-solutions'
     },
     {
-      name: 'Contract Staffing',
+      name: 'Staffing Services',
       description : 'The industry veterans have joined hands to provide relevant IT solutions, endeavour is to assist companies in staff augmentation through managed services while companies can focus on their core business.',
       icon: 'people-fill',
       routePath: 'services/contract-staffing'

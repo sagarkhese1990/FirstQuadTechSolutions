@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class ServicesComponent {
   ourServices: Service[] = [
     {
-      name: 'IT Solutions',
+      name: 'Software Solutions',
       description : 'While correct use of technology has long been an important factor in business success, the need for relevant IT solutions is witnessing an unprecedented growth in today’s market.',
       icon: 'lightbulb-fill',
       routePath: 'services/it-solutions'
@@ -28,7 +28,7 @@ export class ServicesComponent {
       routePath: 'services/employment-solutions'
     },
     {
-      name: 'Contract Staffing',
+      name: 'Staffing Services',
       description : 'The industry veterans have joined hands to provide relevant IT solutions, endeavour is to assist companies in staff augmentation through managed services while companies can focus on their core business.',
       icon: 'people-fill',
       routePath: 'services/contract-staffing'
