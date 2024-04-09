@@ -11,7 +11,7 @@ export class ServicesComponent {
   ourServices: Service[] = [
     {
       name: 'Software Engineering Services',
-      description : 'While correct use of technology has long been an important factor in business success, the need for relevant IT solutions is witnessing an unprecedented growth in today’s market.',
+      description : 'In today’s market, the demand for relevant software solutions and skilled talent is experiencing unprecedented growth, even though the effective use of technology has always been crucial for business success.',
       icon: 'lightbulb-fill',
       routePath: 'services/it-solutions'
     },
