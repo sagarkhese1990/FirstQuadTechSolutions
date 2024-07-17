@@ -20,4 +20,9 @@ h2 {
         left: 0;
         right: 0;
     }
+    @media screen and (max-width: 767px) {
+        &::after,  &::before  {
+            display: none;
+        }
+    }
 }

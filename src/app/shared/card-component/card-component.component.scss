@@ -3,10 +3,10 @@
     // box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
     transition: all .5s;
     padding: 30px;
-    border: 1.5px dashed #eeeeee;
+    // border: 1.5px solid #eeeeee;
+    box-shadow: 0px 2px 10px 0px rgba(146, 184, 255, 0.2);
     position: relative;
      &:hover {
-        box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
         color: $white;
         transform: translateY(-10px);
         &::before { 
