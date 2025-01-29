@@ -26,3 +26,174 @@
     //     transform: rotate(-45deg);
     // }
 }
+
+.main-banner {
+    background-image: url('../../../assets/images/banner-bg.jpg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px 0px 120px 0px;
+    height: 100vh;
+    
+   
+}
+.banner-text {
+    @media screen and (max-width: 991px) {
+        text-align: center;
+    }
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    padding: 40px;
+    z-index: 1;
+    .title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .sub-heading {
+        width: 60%;
+        line-height: 28px;
+    }
+    span.category {
+        background-color: #7a6ad8;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+}
+.main-banner-text{
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-left: 100px;
+    &::after {
+        content: '';
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+}
+.slider {
+    height: 100vh;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.contact-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 1;
+    border-radius: 0 40px 40px 0;
+}
+
+
+.our-mission {
+    position: relative;
+    padding: 0px;
+    margin-top: 130px;
+    &:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 84%;
+        height: 100%;
+        background-color: #f1f0fe;
+        content: '';
+        border-top-left-radius: 500px;
+        border-bottom-left-radius: 500px;
+    }
+    .left-box {
+        margin-top: -40px;
+        margin-bottom: -40px;
+        background-color: #7a6ad8;
+        border-radius: 40px;
+        padding: 20px 50px 50px 50px;
+        .accordion {
+            .accordion-item {
+                background-color: #fff;
+                border-radius: 40px !important;
+                margin-bottom: 30px;
+                border: none;
+                .accordion-button {
+                    outline: none;
+                    box-shadow: none;
+                    border-radius: 40px !important;
+                    padding: 15px 25px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    &:not(.collapsed) {
+                        color: #7a6ad8;
+                        background-color: #fff;
+                    }
+                    &::after {
+                        font-size: 18px;
+                        font-weight: 500;
+                        background-image: none;
+                        content: '+';
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 30px;
+                        border-radius: 50%;
+                        background-color: #7a6ad8;
+                        color: #fff;
+                    }
+                }
+            }
+            .accordion-body {
+                padding: 0px 25px 30px 25px;
+                font-size: 14px;
+                line-height: 28px;
+                color: #4a4a4a;
+            }
+        }
+    }
+
+    .section-heading {
+        margin-left: 60px;
+        margin-bottom: 0px;
+        h6 {
+            color: #7a6ad8;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin: 20px 0;
+            line-height: 44px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 28px;
+            color: #4a4a4a;
+        }
+    }
+}
+.form-floating > .form-select ~ label {
+    transform: scale(0.85) translateY(-0.8rem) translateX(0.15rem);
+}

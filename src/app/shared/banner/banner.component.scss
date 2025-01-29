@@ -21,4 +21,19 @@
     @media screen and (max-width: 991px) {
         text-align: center;
     }
+    // position: absolute;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // justify-items: center;
+    // height: 100%;
+}
+
+.slider {
+    height: 100vh;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }

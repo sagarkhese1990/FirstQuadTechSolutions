@@ -6,6 +6,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { CardComponentComponent } from './card-component/card-component.component';
 import { PageTitleComponent } from './page-title/page-title.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -27,6 +28,7 @@ import { PageTitleComponent } from './page-title/page-title.component';
   imports: [
     CommonModule,
     NgbCarouselModule,
+    CarouselModule,
   ]
 })
 export class SharedModule { }

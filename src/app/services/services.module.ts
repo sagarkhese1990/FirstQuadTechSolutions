@@ -8,6 +8,8 @@ import { ItSolutionsComponent } from './it-solutions/it-solutions.component';
 import { ProfessionalTrainingComponent } from './professional-training/professional-training.component';
 import { EmploymentSolutionsComponent } from './employment-solutions/employment-solutions.component';
 import { ContractStaffingComponent } from './contract-staffing/contract-staffing.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ContractStaffingComponent } from './contract-staffing/contract-staffing
   imports: [
     CommonModule,
     ServicesRoutingModule,
-    SharedModule
+    SharedModule,
+    CarouselModule,
+    NgbAccordionModule
   ]
 })
 export class ServicesModule { }

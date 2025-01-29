@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Service } from '../interfaces/service';
 import { YourNeed } from '../interfaces/your-need';
 export interface Course {
@@ -70,4 +71,22 @@ export class HomeComponent {
       routePath: 'services/employment-solutions'
     }
   ];
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    nav: false,
+    navSpeed: 1000,
+    autoplaySpeed: 5000,
+    autoplay: true,
+    navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
+    responsive: {
+      940: {
+        items: 4
+      }
+    },
+  }
 }

@@ -38,3 +38,14 @@
         border-radius: 50%;
     }
 }
+
+.img-wrapper {
+    height: 300px;
+    background: #595757;
+    padding: 30px;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

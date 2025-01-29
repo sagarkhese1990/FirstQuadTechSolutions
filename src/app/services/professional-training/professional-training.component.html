@@ -1,77 +1,433 @@
-<app-page-title [title]="'Professional Trainings'"></app-page-title>
-<section>
-    <div class="container my-5">
-        <app-section-title class="pb-3" titlePreffix="Our" titleSuffix="Mission" titleAlign="center"></app-section-title>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>It’s a classic dilemma: To get a job, you need experience. But to gain experience, you need a job.
-                    <span class="text-primary">So, what’s the solution?</span>
-                </h3>
-                <p>Internships are one of the main routes to work experience. However, they are notoriously difficult to secure without prior work experience, relocation or the right contacts.</p>
-                <p>Finding the right internship as a student has become one of the most difficult tasks today. With most employers looking for candidates with some work experience, students can't ignore the benefits and experience of internships. This is even more important for students of Computer Science (CS), Information Technology (IT) and related subjects. </p>
-                <p>Our unique platform ensures intelligent and rapid matching between students and companies, training students during their internship and opening up a global network of relationships.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="assets/images/job.jpeg" width="100%" width="100%" height="400"  class="object-fit-cover object-postion-top"/>
-            </div>
-        </div>
+<section class="main-banner">
+  <div class="container">
+    <div class="row position-relative">
+      <div class="col-lg-12">
+        <owl-carousel-o [options]="customOptions">
+          <ng-container *ngFor="let slide of slidesStore">
+            <ng-template carouselSlide [id]="slide.id">
+              <div class="main-banner-text">
+                <div class="container">
+                  <div class="banner-text">
+                    <div>
+                      <span class="category">Our Courses</span>
+                      <p class="fs-40 lh-40 text-white title pe-5">
+                        {{ slide.heading
+                        }}<span class="text-primary">
+                          {{ slide.primaryText }}</span
+                        >
+                      </p>
+                      <p
+                        class="fs-5 text-white mt-5 sub-heading"
+                        [innerHTML]="slide.subHeading"
+                      ></p>
+                      <div class="btn-group mt-5">
+                        <a
+                          class="btn btn-primary rounded-5 me-3 btn-lg"
+                          href="#contactUs"
+                          >Contact Us</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img [src]="slide.image" [title]="slide.heading" />
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="py-5 border-bottom-5 border-primary">
-	<div class="container my-5">
-	<div class="row">
-		<div class="col-md-6 mb-3">
-			<div class="image-wrapper">
-				<img src="../../assets/images/2.jpeg" width="100%" height="400" class="object-fit-cover" alt="Why are we the best">
-			</div>
-		</div>
-		<div class="col-md-6 mb-3">
-			<div>
-				<app-section-title titlePreffix="Why" titleSuffix="are we the best?"
-					titleAlign="left"></app-section-title>
+<!-- <app-page-title [title]="'Professional Trainings'"></app-page-title> -->
 
-				<p>We believe in holistic development in order to meet the talent pool demand of our customers, which also provides competitive advantage to fill up the vacancies quickly.</p>
-
-				<p>We passionately work on building a successful IT industry career for all our prospects. We provide timely feedback and mentoring, and track each individual's progress.</p>
-
-				<p>We focus on both the technical and soft skills development of all our students and staff, with guidance from industry veterans.</p>
-			</div>
-		</div>
-		
-	</div>
-	</div>
-</section>
-
-<section class="training-patch py-5">
-    <div class="container py-5 text-center">
-        <div class="row">
-            <div class="col-md-8 m-auto">
-                <h1>Give Yourself an <span class="text-white"> Unbeatable Advantage</span></h1>
-                <p class="fs-5">The need for work experience is essential, but getting a job can be difficult. You need experience, but to get experience you need a job. Internships are competitive, with 80% of employers consider them a critical factor for graduates. So what do you do?</p>
-                    <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
-            </div>
+<section class="services section-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item  h-100">
+          <div class="icon">
+            <i class="bi bi-amazon"></i>
+          </div>
+          <div class="main-content  h-100">
+            <h4>DevOps With AWS</h4>
+            <p>
+              Unlock the power of AWS and DevOps to streamline your development
+              and deployment processes.
+            </p>
+            <p>This course is designed for IT professionals and developers who want to harness the full potential of AWS cloud services in their DevOps workflows.</p>
+          </div>
         </div>
-    </div>
-</section>
-<section>
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="assets/images/development.jpeg" width="100%" height="400"  class="object-fit-cover"/>
-            </div>
-            <div class="col-md-6">
-                <app-section-title titlePreffix="Start Your Career Journey with" titleSuffix="First Quad Professional Trainings!" titleAlign="left"></app-section-title>
-                <p>Professional development programmes are training and courses that helping employees learn new skills and obtain a certification. These programmes are available to professionals in almost any field encompassing below areas:</p>
-                <ul>
-                    <li>On-the-job training</li>
-                    <li>Career mentoring</li>
-                    <li>Work on live projects</li>
-                    <li>Workshops</li>
-                    <li>Seminars</li>
-                </ul>
-            </div>
-            
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item  h-100">
+          <div class="icon">
+            <i class="bi bi-filetype-java"></i>
+          </div>
+          <div class="main-content  h-100">
+            <h4>DSA, Java with Springboot & Microservices</h4>
+            <p>
+              Master the power of Java and Spring Boot to create
+              high-performance, scalable, and secure applications.
+              
+            </p>
+            <p>This course is tailored for developers and professionals who want to build modern, production-ready applications using Spring Boot.</p>
+            <!-- <div class="main-button">
+              <a href="#">Read More</a>
+            </div> -->
+          </div>
         </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item  h-100">
+          <div class="icon">
+            <i class="bi bi-patch-plus-fill"></i>
+          </div>
+          <div class="main-content  h-100">
+            <h4>Angular & Basics of HTML, CSS</h4>
+            <p>
+              Learn to design, develop, and deploy robust microservices
+              architectures using Spring Boot and modern cloud technologies.
+            </p>
+            <p>This course is ideal for developers and architects looking to master the art of building scalable and resilient systems.</p>
+            <!-- <div class="main-button">
+              <a href="#">Read More</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
+
+<section class="section our-mission">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-1">
+        <div class="left-box">
+          <p class="text-white">
+            Experience our training at no cost for the first 15 days!
+          </p>
+          <div ngbAccordion [closeOthers]="true">
+            <div ngbAccordionItem [collapsed]="false">
+              <h2 ngbAccordionHeader>
+                <button ngbAccordionButton>Program Overview</button>
+              </h2>
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody>
+                  <ng-template>
+                    <p><strong>Free Initial Training Period:</strong></p>
+                    <p><strong>Duration:</strong> 15 Days</p>
+                    <p><strong>Cost:</strong> No cost during this period</p>
+                    <p>
+                      <strong>Purpose:</strong> Allows candidates to evaluate
+                      the training quality and decide if they want to continue
+                    </p>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div ngbAccordionItem>
+              <h2 ngbAccordionHeader>
+                <button ngbAccordionButton>Evaluation Criteria</button>
+              </h2>
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody>
+                  <ng-template>
+                    <p>
+                      <strong>Candidate Satisfaction:</strong> Candidates decide
+                      whether they are satisfied with the training after the
+                      initial period.
+                    </p>
+                    <p>
+                      <strong>Company Assessment:</strong> The company evaluates
+                      the candidates’ interest and participation. Candidates
+                      showing a lack of interest can be discontinued.
+                    </p>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div ngbAccordionItem>
+              <h2 ngbAccordionHeader>
+                <button ngbAccordionButton>
+                  Continued Training and Employment
+                </button>
+              </h2>
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody>
+                  <ng-template>
+                    <p>
+                      <strong>Fee Payment:</strong> If candidates choose to
+                      continue and join full-time employment, they pay 25% of
+                      the entire training fees.
+                    </p>
+                    <p>
+                      <strong>Employment Start:</strong> Actual employment
+                      starts post this initial period.
+                    </p>
+                    <p>
+                      <strong>Remaining Fees:</strong> The remaining fees can be
+                      structured in a way that it can be paid once the candidate
+                      starts earning.
+                    </p>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div ngbAccordionItem>
+              <h2 ngbAccordionHeader>
+                <button ngbAccordionButton>Benefits For Candidates</button>
+              </h2>
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody>
+                  <ng-template>
+                    <p>
+                      <strong>Risk-Free Trial:</strong> Candidates can
+                      experience the training without any financial commitment.
+                    </p>
+                    <p>
+                      <strong>Informed Decision:</strong> They can make an
+                      informed decision about joining based on their experience.
+                    </p>
+                    <p>
+                      <strong>Job Assurance:</strong> A guaranteed job offer
+                      provides financial security and a clear career path.
+                    </p>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 align-self-center">
+        <div class="section-heading py-5">
+          <h6 class="my-5">Our Mission</h6>
+          <h4>
+            At professional training program Offer guarantees a 100% job offer
+            for freshers right from the start and provide a clear path into the
+            IT industry.
+          </h4>
+          <p>
+            It can be challenging for freshers to secure developer jobs,
+            especially with the rapidly changing technology landscape like Java
+            Spring Boot, Microservices, Angular, and React Native, AWS and
+            DevOps.
+          </p>
+          <p>
+            We focus on both the technical and soft skills development of all
+            our students and staff, with guidance from industry veterans.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="contact-us section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 align-self-center">
+        <div class="section-heading">
+          <h6>Why are we the best?</h6>
+          <h2>
+            Our courses include live projects and hands-on assignments, giving
+            students real-world experience.
+          </h2>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-us-content text-white">
+          <p>
+            We offer training in cutting-edge technologies such as DevOps,
+            microservices, and Springboot, ensuring our students are always
+            ahead in the job market.
+          </p>
+          <p>
+            We passionately work on building a successful IT industry career for
+            all our prospects. We provide timely feedback and mentoring, and
+            track each individual's progress.
+          </p>
+          <p>
+            We focus on both the technical and soft skills development of all
+            our students and staff, with guidance from industry veterans.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="contact-us section right">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="contact-us-content text-white">
+            <p>
+                Professional development programmes are training and courses that
+                helping employees learn new skills and obtain a certification. These
+                programmes are available to professionals in almost any field
+                encompassing below areas:
+              </p>
+              <ul>
+                <li>On-the-job training</li>
+                <li>Career mentoring</li>
+                <li>Work on live projects</li>
+                <li>Workshops</li>
+                <li>Seminars</li>
+              </ul>
+          
+          </div>
+        </div>
+        <div class="col-lg-5  offset-lg-1">
+          <div class="section-heading py-5">
+            <h2>
+                Start Your Career Journey with First Quad Professional Trainings!
+            </h2>
+            <p>
+              It can be challenging for freshers to secure developer jobs,
+              especially with the rapidly changing technology landscape like Java
+              Spring Boot, Microservices, Angular, and React Native, AWS and
+              DevOps.
+            </p>
+            <p>
+              We focus on both the technical and soft skills development of all
+              our students and staff, with guidance from industry veterans.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="contact-us section mb-5" id="contactUs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 align-self-center">
+        <div class="section-heading">
+          <h6>Contact Us</h6>
+          <h2>Give Yourself an Unbeatable Advantage</h2>
+          <p>
+            The need for work experience is essential, but getting a job can be
+            difficult. You need experience, but to get experience you need a
+            job. Internships are competitive, with 80% of employers consider
+            them a critical factor for graduates. So what do you do?
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-us-content">
+          <form id="contact-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Enter First Name"
+                  />
+                  <label for="firstName">First Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Enter Last Name"
+                  />
+                  <label for="lastName">Last Name</label>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="name@example.com"
+              />
+              <label for="email" class="form-label">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="mobile"
+                placeholder="Enter Mobile Number"
+              />
+              <label for="mobile" class="form-label">Mobile Number</label>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="qualification"
+                      placeholder="Enter Qualification"
+                    />
+                    <label for="qualification">Qualification</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="year"
+                      placeholder="Enter Passing Year"
+                    />
+                    <label for="year">Passing Year</label>
+                  </div>
+                </div>
+  
+                
+              </div>
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Open this select menu</option>
+                <option value="1">DevOps With AWS</option>
+                <option value="2">Java Springboot</option>
+                <option value="3">Microservices</option>
+              </select>
+              <label for="floatingSelect">Select Course </label>
+            </div>
+            <div class="mb-3">
+              <label for="file" class="form-label text-white"
+                >Upload Resume</label
+              >
+              <input type="file" class="form-control" id="file" />
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="description"
+                style="height: 80px"
+              ></textarea>
+              <label for="description">Description</label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" id="form-submit" class="orange-button">
+                Send Message Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
